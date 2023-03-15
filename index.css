@@ -1,0 +1,127 @@
+:root {
+	--text: #f66936;
+	--card: #202426;
+	--orange: #ffa200;
+	--bg: linear-gradient(135deg, #fc2473, #f66936);
+
+	--delay: 200ms;
+	--rotate-0: rotateY(0deg);
+	--rotate-90: rotateY(90deg);
+	--transition: all ease-in 200ms;
+
+	--radius: 0.75rem;
+	--shadow: 1px 1px 13px #03030390;
+
+	--card-width: 150px;
+	--card-width-mobile: 20vw;
+	--card-enter: enter 600ms ease;
+
+	--font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		sans-serif;
+
+	font-size: 1rem;
+}
+
+
+h1 {
+	margin: auto;
+	color: var(--text);
+	font-size: 2rem;
+	margin-left: 1rem;
+}
+
+h2 {
+	margin: auto;
+	color: var(--text);
+	font-size: 1rem;
+}
+
+h4 {
+	margin: auto;
+	color: var(--orange);
+}
+
+body {
+	font-family: var(--font-family);
+	background: linear-gradient(135deg, #fc2473, #f66936);
+}
+
+.sidebar {
+	background-color: var(--card);
+	box-shadow: var(--shadow);
+	border-radius: 10px;
+
+	width: 27rem;
+	height: fit-content;
+	margin-left: 91rem;
+
+	position: absolute;
+	text-align: center;
+	animation: var(--card-enter);
+}
+
+.avatar {
+	width: 256px;
+	height: 256px;
+	position: sticky;
+	border-radius: 30%;
+	box-shadow: var(--shadow);
+	margin-right: 10px;
+}
+
+.avatarSmall {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	box-shadow: var(--shadow);
+}
+
+.main {
+	background-color: var(--card);
+	box-shadow: var(--shadow);
+	border-radius: 10px;
+	width: 90rem;
+	height: fit-content;
+	position: absolute;
+	margin-left: 2vm;
+	margin-top: 2vm;
+	text-align: left;
+	animation: var(--card-enter);
+	overflow: auto;
+}
+
+#date {
+	font-size: .8rem;
+	font-style: italic;
+	color: gray;
+	margin-left: 1rem;
+	justify-content: left;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	order: 5;
+	object-fit: cover;
+}
+
+#commitText {
+	font-family: var(--font-family);
+	animation: var(--card-enter);
+	color: var(--orange);
+	flex-grow: 4;
+	font-size: 1.2rem;
+	object-fit: cover;
+}
+
+@keyframes enter {
+	from {
+		opacity: 0;
+		transform: scale(0.5);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
