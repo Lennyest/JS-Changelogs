@@ -1,6 +1,9 @@
 # What is this? 🤔
 A simple javascript 'changelogs' website that connects to a repository of choice and displays the data.
 
+# WARNING ⚠️
+The CSS is dangerously bad, tread carefully.
+
 # Building & Setup 🔨
 Clone the project
 In the server directory, create a .env file with the following variables:
